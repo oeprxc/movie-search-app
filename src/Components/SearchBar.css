@@ -1,0 +1,15 @@
+.searchSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+#searchMovie {
+    padding: 1.5rem;
+    margin-right: 1rem;
+}
+
+#btn {
+    padding: 1.5rem;
+}
