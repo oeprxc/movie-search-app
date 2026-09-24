@@ -7,7 +7,9 @@ import { useState } from "react"
 
     const handleSubmit = (event) => {
    event.preventDefault()
+
    console.log(movieName)
+   
    const userInput = movieName.trim()
    if(userInput === "") {
   alert("Please enter a valid search")

@@ -9,7 +9,7 @@ const Header = () => {
           color: "white",
         }}
       >
-        Movie Search App
+        Movie Search App 🎬
       </h1>
     </>
   );
