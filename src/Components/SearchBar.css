@@ -1,53 +1,97 @@
 .searchSection {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-
 #searchMovie {
-    padding: 1.5rem;
-    margin-right: 1rem;
-    border-radius: 0.4rem;
-    border: 1px solid #ccc;
-     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+  padding: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+#searchMovie::placeholder {
+  color: black;
+  font-size: 1.6rem;
+}
+#searchMovie:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 #btn {
-    padding: 1.5rem;
-    border: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-     border-radius: 0.4rem;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+  padding: 1.5rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+#btn:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+#btn:active {
+  transform: scale(0.95);
 }
 
 .movieContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin: 3rem 2rem;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 3rem 2rem;
 }
 
 .movieCard {
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    background-color: white;
-     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  background-color: white;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.movieCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .movieCard img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+  width: 100%;
+  height: 350px;
+  max-width: 100%;
+  border-radius: 0.4rem;
+  object-fit: cover;
 }
 
 .movieCard h2 {
-    margin-top: 1rem;
-    font-size: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  line-height: 1.3;
 }
 
 .movieCard p {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
 }
+
+#rating {
+    font-weight: 600;
+}
+
+#releaseDate {
+    color: #666;
+}
+
+
+/* Media query */
+@media only screen and (max-width: 768px) {
+    .movieContainer {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 1rem;
+    }
+}
+
+

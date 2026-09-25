@@ -50,7 +50,7 @@ import { useState } from "react"
     <>
     <div className="searchSection">
         <form action="" onSubmit={handleSubmit}>
-   <input type="text"  id="searchMovie" value={movieName} placeholder="Search Movie" onChange={(e) => setMovie(e.target.value)}/>
+   <input type="text"  id="searchMovie" value={movieName} placeholder="Search for a movie..." onChange={(e) => setMovie(e.target.value)}/>
     <button id="btn">Search Movie</button>
     <p>{searching}</p>
 
@@ -65,8 +65,8 @@ import { useState } from "react"
       alt={movie.title}
     />
         <h2>{movie.title}</h2>
-        <p>{movie.release_date}</p>
-        <p>{movie.vote_average}</p>
+        <p id="releaseDate">{movie.release_date}</p>
+        <p id="rating">{movie.vote_average.toFixed(1)} / 10 </p>
       </div> 
     ))}
     </div>
