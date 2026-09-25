@@ -4,6 +4,17 @@ My first React project, built while learning and practicing the fundamentals of 
 
 This project is part of my journey from JavaScript to React, where I’m learning how to build interactive user interfaces, work with components, manage state, handle user input, and work with APIs.
 
-More features will be added as I continue learning React.
+# Features
+- Search movies by title
+- Responsive design
+- Live deployed on GiHub Pages
 
-Built with: React, JavaScript, CSS
+# Tech Stack 
+- React
+- JavaScript
+- CSS
+
+# How to Run Locally
+```bash
+npm install
+npm run dev
