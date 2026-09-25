@@ -8,8 +8,46 @@
 #searchMovie {
     padding: 1.5rem;
     margin-right: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
 }
 
 #btn {
     padding: 1.5rem;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+     border-radius: 0.4rem;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.movieContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem 2rem;
+}
+
+.movieCard {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background-color: white;
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.movieCard img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.movieCard h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.movieCard p {
+    margin-top: 0.5rem;
 }

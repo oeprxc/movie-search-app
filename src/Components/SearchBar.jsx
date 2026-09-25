@@ -6,6 +6,9 @@ import { useState } from "react"
 
     const [searching, setSearching] = useState("")
 
+
+    const [movies, setMovies] = useState([])
+
     const handleSubmit = async (event) => {
    event.preventDefault()
 
@@ -29,13 +32,17 @@ import { useState } from "react"
     }
     const movieData = await response.json()
 
-    const movie = movieData.results[0]
-    console.log(movie)
-    
-    setSearching("")
-   } catch (error) {
+    if(movieData.results.length === 0) {
+  setSearching("No movies found.")
+  return
+    }
+    setMovies(movieData.results)
 
-   setSearching("Something went wrong. Please try again later.")
+    setMovie("")
+    setSearching("")
+
+   } catch (error) {
+   
    console.log(error)
    }
     }
@@ -48,6 +55,20 @@ import { useState } from "react"
     <p>{searching}</p>
 
         </form>
+    </div>
+
+    <div className="movieContainer">
+    {movies.map((movie) => (
+      <div className="movieCard" key={movie.id} >
+          <img
+      src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+      alt={movie.title}
+    />
+        <h2>{movie.title}</h2>
+        <p>{movie.release_date}</p>
+        <p>{movie.vote_average}</p>
+      </div> 
+    ))}
     </div>
     </>
     )
