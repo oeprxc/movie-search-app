@@ -16,5 +16,7 @@ This project is part of my journey from JavaScript to React, where I’m learnin
 
 # How to Run Locally
 ```bash
+git clone https://github.com/oeprxc/movie-search-app.git
+cd movie-search-app
 npm install
 npm run dev
