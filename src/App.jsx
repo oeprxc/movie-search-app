@@ -1,31 +1,28 @@
-import { useState } from 'react'
-import './App.css'
-import './index.css'
-import Header from './Components/Header'
-import SearchBar from './Components/SearchBar'
+import { useState } from "react";
+import "./App.css";
+import "./index.css";
+import Header from "./Components/Header";
+import SearchBar from "./Components/SearchBar";
 
 const App = () => {
+  return (
+    <>
+      <div className="container">
+        <div className="card">
 
-return (
-  <>
-  <div className="container">
+          {/* Header section*/}
+          <header>
+            <Header />
+          </header>
 
-     <div className="card">
+          {/* Main section */}
+          <main>
+            <SearchBar />
+          </main>
+        </div>
+      </div>
+    </>
+  );
+};
 
-      <header>
-       <Header/>
-      </header>
-
-      <main>
-      <SearchBar/>
-      </main>
-
-
-     
-     </div>
-  </div>
-  </>
-)
-}
-
-export default App
+export default App;
