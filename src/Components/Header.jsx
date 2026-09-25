@@ -1,7 +1,9 @@
+ import './Header.css'
+
 const Header = () => {
   return (
     <>
-      <h1
+      <h1 id="header"
         style={{
           textAlign: "center",
           padding: "1.5rem",

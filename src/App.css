@@ -26,10 +26,12 @@
  .container {
   display: flex;
   justify-content: center;
+  /* width: 100%; */
  }
 
  .card {
     /* border: 1px solid black; */
   width: 100%;
- min-width: 100vh;
  }
+
+ 
