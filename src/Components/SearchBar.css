@@ -12,6 +12,7 @@
   border-radius: 0.4rem;
   border: 1px solid #ccc;
   transition: all 0.3s;
+  width: 100%;
 }
 #searchMovie::placeholder {
   color: black;
@@ -29,6 +30,8 @@
   cursor: pointer;
   border-radius: 0.4rem;
   transition: all 0.3s;
+  width: 100%;
+  margin-top: 1rem;
 }
 #btn:hover {
   opacity: 0.8;
@@ -87,6 +90,21 @@
 #releaseDate {
   color: #666;
 }
+
+.suggestion {
+ padding: 1rem;
+ border-radius: 8px;
+ cursor: pointer;
+ margin: 1rem;
+ transition: background-color 0.3s ease;
+}
+ .suggestion:hover {
+  background-color: #f0f0f0;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+ }
+ .suggestion:active{
+  transform: scale(0.95);
+ }
 
 /* Media query */
 @media only screen and (max-width: 768px) {
